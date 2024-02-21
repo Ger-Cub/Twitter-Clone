@@ -1,7 +1,15 @@
 import React from "react";
+import Tweet from "./Tweet";
+
 
 export default function Tweets (){
     return (
-        <main className="tweet">Tweets</main>
+        <main className="tweets">
+            <Tweet />
+            <Tweet />
+            <Tweet />
+            <Tweet />
+            <Tweet />
+        </main>
     )
 }

@@ -8,13 +8,13 @@ export default function TweetEditorActions (){
     return (
         <div className="tweet-editor-actions">
             <button >
+                <img src={Media}/>
+            </button>
+            <button >
                 <img src={Emoji}/>
             </button>
             <button >
                 <img src={Gif}/>
-            </button>
-            <button >
-                <img src={Media}/>
             </button>
             <button >
                 <img src={Poll}/>

@@ -1,7 +1,12 @@
 import React from "react";
+import TweetBody from "./TweetBody"
+import TweetActions from "./TweetActions";
 
 export default function TweetContent (){
     return (
-        <div>TweetContent</div>
+        <div className="tweet-content">
+            <TweetBody />
+            <TweetActions />
+        </div>
     )
 }
