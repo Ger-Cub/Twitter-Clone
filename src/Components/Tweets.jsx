@@ -6,10 +6,7 @@ export default function Tweets (){
     return (
         <main className="tweets">
             <Tweet />
-            <Tweet />
-            <Tweet />
-            <Tweet />
-            <Tweet />
         </main>
     )
 }
+   

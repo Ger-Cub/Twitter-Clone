@@ -4,6 +4,7 @@ import TweetEditor from "./TweetEditor";
 import Tweets from "./Tweets";
 
 export default function Timeline(){
+
     return (
         <main className="timeline">
             <Header />

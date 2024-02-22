@@ -1,17 +1,17 @@
-import React from "react";
-import TweetAction1 from "./TweetAction1";
-import TweetAction2 from "./TweetAction2";
-import TweetAction3 from "./TweetAction3";
-import TweetAction4 from "./TweetAction4";
+import TweetAction from "./TweetAction";
+import Reply from "../assets/icon/iconblanc/Reply.svg"
+import Retweet from "../assets/icon/iconblanc/Retweet.svg"
+import Reacti from "../assets/icon/iconblanc/React.svg"
+import Share from "../assets/icon/iconblanc/Share.svg"
 
 
 export default function TweetActions (){
     return (
         <div className="tweet-actions">
-            <TweetAction1 />
-            <TweetAction2 />
-            <TweetAction3 />
-            <TweetAction4 />
+            <TweetAction icon={Reply} value="57" />
+            <TweetAction icon={Retweet} value="144" />
+            <TweetAction icon={Reacti} value="184" />
+            <TweetAction icon={Share} value="" />
         </div>
     )
 }

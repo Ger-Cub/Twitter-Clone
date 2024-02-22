@@ -1,16 +1,14 @@
 import React from "react";
 import TweetTitleAuthor from "./TweetTitleAuthor";
-import TweetTitleDetails1 from "./TweetTitleDetails1";
-import TweetTitleDetails2 from "./TweetTitleDetails2";
-import TweetTitleDetails3 from "./TweetTitleDetails3";
+import TweetTitleDetails from "./TweetTitleDetails";
 
 export default function TweetTitle (){
     return (
         <div className="tweet-title">
-            <TweetTitleAuthor />
-            <TweetTitleDetails1 />
-            <TweetTitleDetails2 />
-            <TweetTitleDetails3 />
+            <TweetTitleAuthor author="CNN" />
+            <TweetTitleDetails detail="@CNN" />
+            <TweetTitleDetails detail="." />
+            <TweetTitleDetails detail="7m" />
         </div>
     )
 }
