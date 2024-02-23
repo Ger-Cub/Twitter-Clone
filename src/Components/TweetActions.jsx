@@ -5,13 +5,13 @@ import Reacti from "../assets/icon/iconblanc/React.svg"
 import Share from "../assets/icon/iconblanc/Share.svg"
 
 
-export default function TweetActions (){
+export default function TweetActions (props){
     return (
         <div className="tweet-actions">
-            <TweetAction icon={Reply} value="57" />
-            <TweetAction icon={Retweet} value="144" />
-            <TweetAction icon={Reacti} value="184" />
-            <TweetAction icon={Share} value="" />
+            <TweetAction icon={Reply} value={props.value.reply} />
+            <TweetAction icon={Retweet} value={props.value.retweet} />
+            <TweetAction icon={Reacti} value={props.value.react} />
+            <TweetAction icon={Share} value={props.value.share} />
         </div>
     )
 }

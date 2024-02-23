@@ -3,12 +3,13 @@ import TweetTitle from "./TweetTitle";
 import TweetText from "./TweetText"
 import TweetImage from "./TweetImage"
 
-export default function TweetBody (){
+export default function TweetBody (props){
+    console.log(props.value.image);
     return (
         <div className="tweet-body">
-            <TweetTitle />
-            <TweetText text='President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.' />
-            <TweetImage img="" />
+            <TweetTitle value={props.value.title}/>
+            <TweetText text={props.value.text} />
+            <TweetImage img={props.value.image} />
         </div>
     )
 }
