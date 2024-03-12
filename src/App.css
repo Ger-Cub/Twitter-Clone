@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-
 body{
     background-color: black;
     color: white;
@@ -15,7 +14,8 @@ body{
 }
 
 .timeline {
-    flex: 0 0 800px;
+    /* flex: 0 0 800px; */
+    width: 55%;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;

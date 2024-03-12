@@ -108,7 +108,7 @@ export default function Tweets (){
                         "detail": "@CNN",
                         "time": "7m"
                     },
-                    "text":'',
+                    "text":'hello literally everyone.',
                     "image": ""
                 },
                 "actions":{
