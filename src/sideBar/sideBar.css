@@ -24,7 +24,7 @@
 }
 .user-footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .contenu-footer{
     font-family: 'Inter', sans-serif;

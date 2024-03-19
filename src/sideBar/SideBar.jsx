@@ -9,6 +9,7 @@ import Bookmarks from "../assets/icon/iconblanc/Bookmarks.svg"
 import Lists from "../assets/icon/iconblanc/Lists.svg"
 import Profile from "../assets/icon/iconblanc/Profile.svg"
 import More from "../assets//icon/iconblanc/More.svg"
+import More2 from "../assets/icon/iconblanc/More-2.svg"
 import Private from "../assets/icon/iconblanc/Private.svg"
 import ProfilePhoto from "../assets/img/Profile-Photo.svg"
 import "./sideBar.css"
@@ -95,6 +96,7 @@ export default function SideBar() {
                     <h5>Bradley Ortiz <span><img src={Private} alt="" /></span></h5>
                     <small>@Bradley_</small>
                 </div>
+                <img src={More2} alt="" />
                 
             </div>
 
