@@ -7,11 +7,13 @@ import Trends from './trends/Trends'
 function App() {
 
   return (
-    <>
+    < div className='main'>
       <SideBar/>
-      <Timeline />
+      <div className='milieu'>
+        <Timeline />
+      </div>
       <Trends/>
-    </>
+    </div>
   )
 }
 

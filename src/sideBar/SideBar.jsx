@@ -87,13 +87,15 @@ export default function SideBar() {
                 </Link>
 
                 <button style={{ width: "90%" }} className="button">Tweet</button>
+                
             </div>
             <div className="user-footer">
                 <img src={ProfilePhoto} alt="" />
                 <div className="contenu-footer">
-                    Bradley Ortiz <span><img src={Private} alt="" /></span>
-                    <p>@Bradley_</p>
+                    <h5>Bradley Ortiz <span><img src={Private} alt="" /></span></h5>
+                    <small>@Bradley_</small>
                 </div>
+                
             </div>
 
         </div>

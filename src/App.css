@@ -13,9 +13,16 @@ body{
     justify-content: space-between;
 }
 
+.main{
+    display: flex;
+}
+.milieu{
+    width: 55%;
+}
+
+
 .timeline {
     /* flex: 0 0 800px; */
-    width: 55%;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
@@ -145,10 +152,13 @@ body{
 }
 
 .tweet-title svg{
-    width: 1.2rem;
+    width: 1.5rem;
     height: auto;
 }
 .tweet-title-author{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
     font-size: 1rem;
     font-weight: 700;
 }
