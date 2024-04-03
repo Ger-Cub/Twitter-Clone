@@ -6,20 +6,20 @@ import Schedule from "../assets/icon/Schedule.svg"
 
 export default function TweetEditorActions (){
     return (
-        <div className="tweet-editor-actions">
-            <button >
+        <div class="flex items-center justify-start gap-2">
+            <button class="bg-transparent focus:outline-none">
                 <img src={Media}/>
             </button>
-            <button >
+            <button class="bg-transparent focus:outline-none">
                 <img src={Emoji}/>
             </button>
-            <button >
+            <button class="bg-transparent focus:outline-none">
                 <img src={Gif}/>
             </button>
-            <button >
+            <button class="bg-transparent focus:outline-none">
                 <img src={Poll}/>
             </button>
-            <button >
+            <button class="bg-transparent focus:outline-none">
                 <img src={Schedule}/>
             </button>
         </div>

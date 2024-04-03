@@ -4,7 +4,7 @@ import TopTweets from "./TopTweets";
 
 export default function Header (){
     return (
-        <header className="header">
+        <header class="px-4 py-6 flex items-center justify-between border-b border-[#2F3336]">
             <PageTitle />
             <TopTweets />
         </header>

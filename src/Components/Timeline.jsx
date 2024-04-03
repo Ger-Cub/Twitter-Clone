@@ -6,7 +6,7 @@ import Tweets from "./Tweets";
 export default function Timeline(){
 
     return (
-        <main className="timeline">
+        <main class="border-l border-r border-[#2F3336] font-inter">
             <Header />
             <TweetEditor />
             <Tweets />

@@ -22,7 +22,6 @@ body{
 
 
 .timeline {
-    /* flex: 0 0 800px; */
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
@@ -57,7 +56,6 @@ body{
 
 .avatar {
     flex: 0 0 70px;
-    /*padding: 0 rem;*/
 }
 
 .avatar img {
@@ -120,8 +118,6 @@ body{
 }
 
 .tweet-avatar {
-    /*height: 70px;*/
-    /*width: 70px;*/
     flex: 0 0 70px;
 }
 
@@ -165,6 +161,7 @@ body{
 .tweet-title-details{
     color: #6E767D;
 }
+
 .tweet-text{
     color: #D9D9D9;
     font-size: 1rem;
@@ -198,12 +195,18 @@ body{
     height: auto;
     color: #2F3336;
 }
+.tweet-actions svg{
+    color: #1D9BF0;
+}
 
 .tweet-action{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+.tweet-action:hover{
+    color: #1D9BF0;
 }
 
 

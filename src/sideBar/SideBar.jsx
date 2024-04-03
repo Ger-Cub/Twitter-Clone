@@ -12,82 +12,81 @@ import More from "../assets//icon/iconblanc/More.svg"
 import More2 from "../assets/icon/iconblanc/More-2.svg"
 import Private from "../assets/icon/iconblanc/Private.svg"
 import ProfilePhoto from "../assets/img/Profile-Photo.svg"
-import "./sideBar.css"
+// import "./sideBar.css"
+import '../index.css'
 
 export default function SideBar() {
     return (
-        <div className="sidebar">
-            <div className="sidebar-content">
+        <div class="left-0 top-0 w-[30%] h-screen bg-transparent pl-4 pt-4">
+            <div class="h-full">
 
                 <Link to="">
                     <img src={Tweeter} alt="" />
                 </Link>
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/home">
+                    <div class="flex items-center gap-2">
                         <img src={HomeFill} alt="" />
-                        <h1 className="page-title-sidebare">Home</h1>
+                        <h1 class="text-xl font-bold text-white">Home</h1>
                     </div>
                 </Link>
 
-
-
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/explore">
+                    <div class="flex items-center gap-2">
                         <img src={Explore} alt="" />
-                        <h1 className="page-title-sidebare">Explore</h1>
+                        <h1 class="text-xl font-bold text-white">Explore</h1>
                     </div>
                 </Link>
 
 
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/notifications">
+                    <div class="flex items-center gap-2">
                         <img src={Notifications} alt="" />
-                        <h1 className="page-title-sidebare">Notifications</h1>
+                        <h1 class="text-xl font-bold text-white">Notifications</h1>
                     </div>
                 </Link>
 
 
 
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/messages">
+                    <div class="flex items-center gap-2">
                         <img src={Message} alt="" />
-                        <h1 className="page-title-sidebare">Messages</h1>
+                        <h1 class="text-xl font-bold text-white">Messages</h1>
                     </div>
                 </Link>
 
 
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/bookmarks">
+                    <div class="flex items-center gap-2">
                         <img src={Bookmarks} alt="" />
-                        <h1 className="page-title-sidebare">Bookmarks</h1>
+                        <h1 class="text-xl font-bold text-white">Bookmarks</h1>
                     </div>
                 </Link>
 
 
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/lists">
+                    <div class="flex items-center gap-2">
                         <img src={Lists} alt="" />
-                        <h1 className="page-title-sidebare">Lists</h1>
+                        <h1 class="text-xl font-bold text-white">Lists</h1>
                     </div>
                 </Link>
 
 
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/profile">
+                    <div class="flex items-center gap-2">
                         <img src={Profile} alt="" />
-                        <h1 className="page-title-sidebare">Profile</h1>
+                        <h1 class="text-xl font-bold text-white">Profile</h1>
                     </div>
                 </Link>
 
 
-                <Link to="">
-                    <div className="side-nav">
+                <Link to="/more">
+                    <div class="flex items-center gap-2">
                         <img src={More} alt="" />
-                        <h1 className="page-title-sidebare">More</h1>
+                        <h1 class="text-xl font-bold text-white">More</h1>
                     </div>
                 </Link>
 
-                <button style={{ width: "90%" }} className="button">Tweet</button>
+                <button style={{ width: "90%" }} class="text-transform: capitalize px-4 py-2 rounded-full bg-[#1D9BF0] text-white text-sm">Tweet</button>
                 
             </div>
             <div className="user-footer">

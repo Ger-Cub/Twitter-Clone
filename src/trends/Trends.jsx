@@ -93,6 +93,10 @@ export default function Trends() {
                     <h3>Show more</h3>
                 </div>
             </div>
+
+            <div className='info-content'>
+                <p className='info'>Terms of Service Privacy Policy Cookie Policy Imprint Ads info More ... ©2021 Twitter, Inc.</p>
+            </div>
         </div>
     )
 }

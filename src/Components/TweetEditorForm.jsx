@@ -4,7 +4,7 @@ import TweetEditorButtons from "./TweetEditorButtons";
 
 export default function TweetEditorForm (){
     return (
-        <div className="tweet-editor-form">
+        <div class="flex-grow w-full">
             <TweetEditorInput />
             <TweetEditorButtons />
         </div>
