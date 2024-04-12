@@ -1,7 +1,8 @@
-import React from "react";
 
-export default function TweetTitleDetails (props){
+export default function TweetTitleDetails ({username, time}){
     return (
-        <div class="text-gray-400">{props.value}</div>
+        <div class="text-gray-400">
+            @{ username + ' . ' + time }    
+        </div>
     )
 }

@@ -1,11 +1,14 @@
 import TweetAvatar from "./TweetAvatar";
 import TweetContent from "./TweetContent";
+import { TweetContext } from "../Context/contex";
 
-export default function Tweet (props){
+export default function Tweet({data}) {
     return (
         <div class="flex items-start justify-start gap-4 px-4 py-6 border-b border-[#2F3336]">
-            <TweetAvatar value={props.table.avatar}/>
-            <TweetContent value={props.table.content}/>
+            <TweetContext.Provider value={data}>
+                <TweetAvatar  />
+                <TweetContent />
+            </TweetContext.Provider>
         </div>
     )
 }

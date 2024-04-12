@@ -1,5 +1,3 @@
-import React from 'react';
+import { createContext } from "react"
 
-export const GlobalContext = React.createContext(null);
-
-
+export const TweetContext = createContext(null)

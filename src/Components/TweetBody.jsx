@@ -1,14 +1,16 @@
-import React from "react";
 import TweetTitle from "./TweetTitle";
 import TweetText from "./TweetText"
 import TweetImage from "./TweetImage"
+import { useContext } from "react";
+import { TweetContext } from "../Context/contex";
 
-export default function TweetBody (props){
+export default function TweetBody (){
+    const tweet = useContext(TweetContext);
     return (
         <div class="flex flex-col gap-2">
-            <TweetTitle value={props.value.title}/>
-            <TweetText text={props.value.text} />
-            {props.value.image && <TweetImage img={props.value.image} />}
+            <TweetTitle />
+            <TweetText />
+            {tweet.content.srcImage && <TweetImage image={tweet.content.srcImage} />}
         </div>
     )
 }

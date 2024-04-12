@@ -1,7 +1,9 @@
-import React from "react";
+import {useContext} from "react";
+import { TweetContext } from "../Context/contex"
 
-export default function TweetText (props){
+export default function TweetText ({text}){
+    const tweet = useContext(TweetContext);
     return (
-        <p class="text-gray-300 text-lg">{props.text}</p>
-    )
+        <p class="text-gray-300 text-lg">{tweet.content.text}</p>
+    );
 }

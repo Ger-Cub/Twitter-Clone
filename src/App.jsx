@@ -4,24 +4,24 @@ import { Outlet } from 'react-router-dom'
 import './index.css'
 import SideBar from './sideBar/SideBar'
 import Trends from './trends/Trends'
-import { GlobalContext } from './Context/contex'
-import React,{useState} from 'react'
+import { TweetContext } from './Context/contex'
+import json from "./data/data.json"
 
 function App() {
 
-  const [data, setdata] = useState('')
+  const data = { ...json };
 
   return (
 
-    <GlobalContext.Provider value={{data, setdata}}>
-      < div class="main flex">
+    <TweetContext.Provider value={data}>
+      < div class=" flex">
         <SideBar />
-        <div class="milieu w-[70%]">
+        <div class=" w-[45%]">
           <Outlet />
         </div>
         <Trends />
       </div>
-    </GlobalContext.Provider>
+    </TweetContext.Provider>
   )
 }
 

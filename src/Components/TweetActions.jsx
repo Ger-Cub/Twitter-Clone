@@ -1,17 +1,104 @@
 import TweetAction from "./TweetAction";
-import Reply from "../assets/icon/iconblanc/Reply.svg"
-import Retweet from "../assets/icon/iconblanc/Retweet.svg"
-import Reacti from "../assets/icon/iconblanc/React.svg"
-import Share from "../assets/icon/iconblanc/Share.svg"
+
+import Comment from "../Components/icons/Comment";
+import Like from "../Components/icons/Like";
+import Retweet from "../Components/icons/Retweet"
+import Share from "../Components/icons/Share"
+
+import {TweetContext} from "../Context/contex";
+import { useContext, useState } from "react";
 
 
-export default function TweetActions (props){
+export default function TweetActions() {
+
+    const [state, setState] = useState(Array(4).fill(false));
+    const tweet = useContext(TweetContext);
+    const [action, setAction] = useState([
+        "true",
+        "true",
+        tweet.actions.state,
+        "true",
+    ]);
+    console.log(action[2])
+
+    const verify = (i) => {
+        const newSvg = state.slice();
+        newSvg[i] = !newSvg[i];
+        setState(newSvg);
+    };
+
+    const handleClick = (i) => {
+        const newAction = action.slice();
+        newAction[i] = action[i] == "true" ? "false" : "true";
+        setAction(newAction);
+    };
+
+    tweet.actions.state = action[2] == "true" ? "true" : "false";
+
+    // ................
+    const acts = [
+        {
+            logo: (
+                <Comment
+                    Csvg={state[0] ? "#1d52f022" : ""}
+                    color={state[0] ? "#1d52f0" : "#6E767D"}
+                />
+            ),
+            nbr: tweet.actions.comments,
+            title: "Comment",
+            color: state[0] ? "#1d52f0" : "#6E767D",
+        },
+
+        {
+            logo: (
+                <Retweet
+                    Csvg={state[1] && "#1df04022"}
+                    color={state[1] ? "#1df040" : "#6E767D"}
+                />
+            ),
+            nbr: tweet.actions.retweet,
+            title: "Retweet",
+            color: state[1] ? "#1df040" : "#6E767D",
+        },
+        {
+            logo: (
+                <Like
+                    Csvg={state[2] && "#f8358a22"}
+                    color={state[2] ? "#f8358a" : "#6E767D"}
+                    like={tweet.actions.state}
+                />
+            ),
+            nbr:
+                tweet.actions.like[tweet.actions.like.length - 1] == "k"
+                    ? tweet.actions.like
+                    : tweet.actions.state == "false"
+                        ? Number(tweet.actions.like) + 1
+                        : Number(tweet.actions.like),
+            title: "Like",
+            color: state[2] ? "#f8358a" : "#6E767D",
+        },
+        {
+            logo: (
+                <Share
+                    Csvg={state[3] && "#1d52f022"}
+                    color={state[3] ? "#1d52f0" : "#6E767D"}
+                />
+            ),
+            title: "Share",
+            color: state[3] ? "#1d52f0" : "#6E767D",
+        },
+    ];
+
     return (
-        <div class="flex items-center justify-center gap-20 text-gray-400 text-sm">
-            <TweetAction icon={Reply} value={props.value.reply} />
-            <TweetAction icon={Retweet} value={props.value.retweet} />
-            <TweetAction icon={Reacti} value={props.value.react} />
-            <TweetAction icon={Share} value={props.value.share} />
+        <div className="tweet-actions">
+            {acts.map((e, i) => (
+                <TweetAction
+                    key={i}
+                    action={e}
+                    like={() => handleClick(i)}
+                    verify={() => verify(i)}
+                />
+            ))}
         </div>
     )
 }
