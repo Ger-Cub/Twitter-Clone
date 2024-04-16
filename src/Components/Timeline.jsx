@@ -8,7 +8,7 @@ export default function Timeline(){
     const tweet = useContext(TweetContext);
     const [tab,setTab] = useState(tweet.tweets);
     return (
-        <main class="border-l border-r border-[#2F3336] font-inter">
+        <main className="border-l border-r border-[#2F3336] font-inter">
             <Header />
             <TweetEditor tweets={tab} setTweets={setTab}/>
             <Tweets tweets={tweet.tweets}/>

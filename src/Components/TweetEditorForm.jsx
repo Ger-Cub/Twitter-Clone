@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form"
 import TweetEditorInput from "./TweetEditorInput";
 import TweetEditorButtons from "./TweetEditorButtons";
 
-import data from "../data/data.json";
+import data from "../data/initial-data.json";
 import { useContext, useRef } from "react";
 import { TweetContext } from "../Context/contex";
 
@@ -28,7 +28,7 @@ export default function TweetEditorForm({ tweets, setTweets }) {
 
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} class="flex-grow w-full">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex-grow w-full">
             <TweetEditorInput register={register} ref={input} />
             <TweetEditorButtons />
         </form>

@@ -8,7 +8,7 @@ export default function Profile(){
     const tweet = useContext(TweetContext);
 
     return (
-        <div class="border-l border-r border-[#2F3336] font-inter w-[100%]">
+        <div className="border-l border-r border-[#2F3336] font-inter w-[100%]">
             <h3 className="my-[10vh] mx-auto text-center text-6xl">
                 Prolil de @{userName}
             </h3>

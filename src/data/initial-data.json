@@ -94,51 +94,6 @@
                 "state":"true"
             }
         }
-    ],
-    "nav" : [
-        {
-            "logoAfter" : "public/Icons/Twitter.svg"
-        },
-        {
-            "logoAfter" : "public/Icons/Home.svg",
-            "text": "Home",
-            "path":"/"
-        },
-        {
-            "logoAfter" : "public/Icons/Explore.svg",
-            "text": "Explore",
-            "path":"/"
-        },
-        {
-            "logoAfter" : "public/Icons/Notifications.svg",
-            "text": "Notifications",
-            "path":"/"
-        },
-        {
-            "logoAfter" : "public/Icons/Messages.svg",
-            "text": "Messages",
-            "path":"/"
-        },
-        {
-            "logoAfter" : "public/Icons/Bookmarks.svg",
-            "text": "Bookmarks",
-            "path":"/"
-        },
-        {
-            "logoAfter" : "/public/Icons/Lists-Fill.svg",
-            "text": "Lists",
-            "path":"/"
-        },
-        {
-            "logoAfter" : "public/Icons/Profile.svg",
-            "text": "Profile",
-            "path":"/bradley_"
-        },
-        {
-            "logoAfter" : "public/Icons/More.svg",
-            "text": "More",
-            "path":"/"
-        }
-    ],  
-    "trends" : ["0","1","2","3"]
+    ]
+    
 }

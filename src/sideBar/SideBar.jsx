@@ -17,76 +17,76 @@ import '../index.css'
 
 export default function SideBar() {
     return (
-        <div class="left-0 top-0 w-[30%] h-screen bg-transparent pl-[100px] pt-4">
-            <div class="h-full">
+        <div className="left-0 top-0 w-[30%] h-screen bg-transparent pl-[100px] pt-4">
+            <div className="h-full">
 
                 <Link to="">
                     <img src={Tweeter} alt="" />
                 </Link>
                 <Link to="/home">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={HomeFill} alt="" />
-                        <h1 class="text-xl font-bold text-white">Home</h1>
+                        <h1 className="text-xl font-bold text-white">Home</h1>
                     </div>
                 </Link>
 
                 <Link to="/explore">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Explore} alt="" />
-                        <h1 class="text-xl font-bold text-white">Explore</h1>
+                        <h1 className="text-xl font-bold text-white">Explore</h1>
                     </div>
                 </Link>
 
 
                 <Link to="/notifications">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Notifications} alt="" />
-                        <h1 class="text-xl font-bold text-white">Notifications</h1>
+                        <h1 className="text-xl font-bold text-white">Notifications</h1>
                     </div>
                 </Link>
 
 
 
                 <Link to="/messages">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Message} alt="" />
-                        <h1 class="text-xl font-bold text-white">Messages</h1>
+                        <h1 className="text-xl font-bold text-white">Messages</h1>
                     </div>
                 </Link>
 
 
                 <Link to="/bookmarks">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Bookmarks} alt="" />
-                        <h1 class="text-xl font-bold text-white">Bookmarks</h1>
+                        <h1 className="text-xl font-bold text-white">Bookmarks</h1>
                     </div>
                 </Link>
 
 
                 <Link to="/lists">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Lists} alt="" />
-                        <h1 class="text-xl font-bold text-white">Lists</h1>
+                        <h1 className="text-xl font-bold text-white">Lists</h1>
                     </div>
                 </Link>
 
 
                 <Link to="/profile">
-                    <div class="flex items-center gap-2 pt-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Profile} alt="" />
-                        <h1 class="text-xl font-bold text-white">Profil</h1>
+                        <h1 className="text-xl font-bold text-white">Profil</h1>
                     </div>
                 </Link>
 
 
                 <Link to="/more">
-                    <div class="flex items-center gap-2 pt-[25px] pb-[25px]">
+                    <div className="flex items-center gap-2 pt-[25px] pb-[25px]">
                         <img src={More} alt="" />
-                        <h1 class="text-xl font-bold text-white">More</h1>
+                        <h1 className="text-xl font-bold text-white">More</h1>
                     </div>
                 </Link>
 
-                <button style={{ width: "90%" }} class="text-transform: capitalize px-4 py-2 rounded-full bg-[#1D9BF0] text-white text-sm">Tweet</button>
+                <button style={{ width: "90%" }} className="text-transform: capitalize px-4 py-2 rounded-full bg-[#1D9BF0] text-white text-sm">Tweet</button>
                 
             </div>
             <div className="user-footer">

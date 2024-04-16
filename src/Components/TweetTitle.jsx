@@ -7,7 +7,7 @@ import { TweetContext } from "../Context/contex";
 export default function TweetTitle (){
     const tweet = useContext(TweetContext);
     return (
-        <Link to={`/${tweet.user.userName}`} class="flex items-start justify-start gap-2 text-sm">
+        <Link to={`/${tweet.user.userName}`} className="flex items-start justify-start gap-2 text-sm">
             <TweetTitleAuthor name={tweet.user.name} />
             <TweetTitleDetails 
                 username={tweet.user.userName} 
