@@ -1,11 +1,11 @@
 import React, {useContext} from "react";
 import { useParams } from "react-router-dom";
-import { TweetContext } from "../Context/contex";
+import { Context } from "../Context/tweets";
 import Tweet from "../Components/Tweet";
 
 export default function Profile(){
     const {userName} = useParams();
-    const tweet = useContext(TweetContext);
+    const tweet = useContext(Context);
 
     return (
         <div className="border-l border-r border-[#2F3336] font-inter w-[100%]">

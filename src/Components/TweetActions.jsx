@@ -5,14 +5,14 @@ import Like from "../Components/icons/Like";
 import Retweet from "../Components/icons/Retweet"
 import Share from "../Components/icons/Share"
 
-import {TweetContext} from "../Context/contex";
+import {Context} from "../Context/tweets";
 import { useContext, useState } from "react";
 
 
 export default function TweetActions() {
 
     const [state, setState] = useState(Array(4).fill(false));
-    const tweet = useContext(TweetContext);
+    const tweet = useContext(Context);
     const [action, setAction] = useState([
         "true",
         "true",

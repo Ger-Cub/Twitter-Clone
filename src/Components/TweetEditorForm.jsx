@@ -1,35 +1,46 @@
-import { useForm } from "react-hook-form"
+//Importation des composants...............
 import TweetEditorInput from "./TweetEditorInput";
 import TweetEditorButtons from "./TweetEditorButtons";
 
-import data from "../data/initial-data.json";
-import { useContext, useRef } from "react";
-import { TweetContext } from "../Context/contex";
+//Importation des dépendances..............
+import { useContext } from "react";
+import { Context } from "../Context/tweets";
+import { useForm } from "react-hook-form"
 
-export default function TweetEditorForm({ tweets, setTweets }) {
-    const { register, handleSubmit, reset } = useForm();
-    const dataTweets = useContext(TweetContext);
-    const input = useRef();
+//Importation des axios.....................
+import axios from "axios";
+
+export default function TweetEditorForm() {
+    const { register, handleSubmit, reset, formState:{errors} } = useForm();
+    const { tweets, setTweets, current } = useContext(Context);
 
     const onSubmit = (dataFrom) => {
         const newTweet = {
-            user: data['current-user'],
+            user: current,
             content: dataFrom,
             actions: {
                 comments: 0,
                 retweet: 0,
                 like: 0,
+                state: true,
             },
         };
-        dataTweets.tweets = [newTweet, ...dataTweets.tweets];
-        setTweets(dataTweets.tweets);
+        axios
+         .post("http://localhost:3000/tweets", newTweet)
+         .then((response) => {
+            setTweets([...tweets, response.data]);
+         })
+         .catch((error) => console.error(error))
         reset();
     };
-
-
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="flex-grow w-full">
-            <TweetEditorInput register={register} ref={input} />
+            <TweetEditorInput register={register} />
+            {
+                errors.text && (
+                    <p className="text-red-600 italic">{errors.text.message}</p>
+                )
+            }
             <TweetEditorButtons />
         </form>
     );
