@@ -2,7 +2,6 @@
 import seach from "../assets/icon/iconblanc/Search.svg"
 import setting from "../assets/icon/iconblanc/Settings.svg"
 import more from "../assets/icon/iconblanc/More-2.svg"
-import follow from "./follow"
 import { Context } from '../Context/tweets'
 
 import { useContext } from 'react'
