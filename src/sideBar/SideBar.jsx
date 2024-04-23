@@ -86,19 +86,24 @@ export default function SideBar() {
                     </div>
                 </Link>
 
-                <button style={{ width: "90%" }} className="text-transform: capitalize px-4 py-2 rounded-full bg-[#1D9BF0] text-white text-sm">Tweet</button>
-                
-            </div>
-            <div className="user-footer">
-                <img src={ProfilePhoto} alt="" />
-                <div className="contenu-footer">
-                    <h5>Bradley Ortiz <span><img src={Private} alt="" /></span></h5>
-                    <small>@Bradley_</small>
-                </div>
-                <img src={More2} alt="" />
-                
-            </div>
+                <button style={{ width: "70%", height: "7%" }} className="text-transform: capitalize px-4 py-2 rounded-full bg-[#1D9BF0] text-white text-sm">Tweet</button>
 
+                <div className="absolute flex justify-between bottom-[10px]">
+                    <Link to="/bradley_" className="flex gap-[10px] link">
+                        <img src={ProfilePhoto} alt="" />
+                        <div className="flex justify-center flex-col">
+                            <div className="flex flex-raw">                            
+                                <h5>Bradley Ortiz </h5>
+                                <img className="w-[20px]" src={Private} alt="" />
+                            </div>
+
+                            <div className="text-[gray] font-thin">@Bradley_</div>
+                        </div>
+                        <img src={More2} alt="" />
+                    </Link>
+                </div>
+
+            </div>
         </div>
-    )
-}
+    );
+};
