@@ -97,41 +97,31 @@
         "state": "true"
       },
       "id": "c558"
-    },
+    }
+  ],
+  "follow" : [
     {
-      "id": "f68a",
       "user": {
-        "name": "Bradley Ortiz",
-        "userName": "bradley_",
-        "time": "maintenant",
-        "src": "/Avatars/Profile-Photo.png"
-      },
-      "content": {
-        "text": "Bonjour"
-      },
-      "actions": {
-        "comments": 0,
-        "retweet": 0,
-        "like": 0,
-        "state": true
+        "name": "The New York Times",
+        "userName": "nytimes",
+        "time": "2h",
+        "src": "/Tweet-Avatar/Profile-Photo6.png"
       }
     },
     {
-      "id": "b756",
       "user": {
-        "name": "Bradley Ortiz",
-        "userName": "bradley_",
-        "time": "maintenant",
-        "src": "/Avatars/Profile-Photo.png"
-      },
-      "content": {
-        "text": "fqffffffffffffffffffffffffffffffffffffffffff"
-      },
-      "actions": {
-        "comments": 0,
-        "retweet": 0,
-        "like": 0,
-        "state": true
+        "name": "CNN",
+        "userName": "cnn",
+        "time": "7m",
+        "src": "/Tweet-Avatar/Profile-Photo-1.png"
+      }
+    },
+    {
+      "user": {
+        "name": "Twitter",
+        "userName": "twitter",
+        "time": "Oct 4",
+        "src": "/Tweet-Avatar/Profile-Photo-2.png"
       }
     }
   ]

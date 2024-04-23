@@ -19,7 +19,6 @@ export default function TweetActions() {
         tweet.actions.state,
         "true",
     ]);
-    console.log(action[2])
 
     const verify = (i) => {
         const newSvg = state.slice();

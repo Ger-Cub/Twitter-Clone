@@ -9,9 +9,9 @@ export default function Profile(){
 
     return (
         <div className="border-l border-r border-[#2F3336] font-inter w-[100%]">
-            <h3 className="my-[10vh] mx-auto text-center text-6xl">
-                Prolil de @{userName}
-            </h3>
+            <p className="my-[10vh] mx-auto text-2xl">
+                @{userName}
+            </p>
             {
                 tweet.tweets.filter((e) => e.user.userName == userName).map((el, i) => (<Tweet key={i} data={el}/>))
             }
