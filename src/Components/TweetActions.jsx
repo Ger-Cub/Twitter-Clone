@@ -5,7 +5,7 @@ import Like from "../Components/icons/Like";
 import Retweet from "../Components/icons/Retweet"
 import Share from "../Components/icons/Share"
 
-import {Context} from "../Context/tweets";
+import { Context } from "../Context/tweets";
 import { useContext, useState } from "react";
 
 

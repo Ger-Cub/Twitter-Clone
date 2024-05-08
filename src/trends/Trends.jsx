@@ -8,7 +8,6 @@ import { useContext } from 'react'
 
 export default function Trends() {
     const { follow } = useContext(Context);
-    console.log(follow)
 
     return (
         <div className="sticky top-0 w-[30%] flex flex-col items-center gap-[1rem] font-sans">

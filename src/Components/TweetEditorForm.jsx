@@ -25,8 +25,9 @@ export default function TweetEditorForm() {
                 state: true,
             },
         };
+        console.log(newTweet)
         axios
-         .post("http://localhost:3000/tweets", newTweet)
+         .post("https://twitter-clone-backend-9t09.onrender.com/tweets", newTweet)
          .then((response) => {
             setTweets([...tweets, response.data]);
          })
