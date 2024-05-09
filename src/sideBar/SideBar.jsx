@@ -71,7 +71,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/:userName">
+                <Link to="/bradley_">
                     <div className="flex items-center gap-2 pt-[25px]">
                         <img src={Profile} alt="" />
                         <h1 className="text-xl font-bold text-white">Profil</h1>
